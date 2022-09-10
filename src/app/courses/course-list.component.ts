@@ -14,7 +14,7 @@ export class CourseListComponent implements OnInit {
             {
                 id: 1,
                 name: 'Angular: Forms',
-                imageUrl: '',
+                imageUrl: '/assets/images/forms.png',
                 price: 129.97,
                 code: 'RPG-1777',
                 duration: 120,
@@ -25,7 +25,7 @@ export class CourseListComponent implements OnInit {
             {
                 id: 2,
                 name: 'Angular: HTTP',
-                imageUrl: '',
+                imageUrl: '/assets/images/http.png',
                 price: 89.90,
                 code: 'RXG-6679',
                 duration: 80,
