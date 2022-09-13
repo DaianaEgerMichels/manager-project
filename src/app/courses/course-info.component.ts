@@ -6,12 +6,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CourseInfoComponent implements OnInit{
 
-    courseId: number = 0;
+    course: Course;
 
-    constructor(private activatedRoute: ActivatedRoute){ }
+    constructor(private activatedRoute: ActivatedRoute, private courseService: CourseService){ }
 
     ngOnInit(): void {
-        this.courseId = +this.activatedRoute.snapshot.paramMap.get('id');
+        this.course = this.courseService.retriveById(+this.activatedRoute.snapshot.paramMap.get('id'));
     }
 
 }
